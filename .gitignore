@@ -1,16 +1,14 @@
-.metadata
-bin/
-tmp/
+# Compiled class file
 *.class
-*.tmp
-*.bak
-*.swp
-*~.nib
+
+# Log file
 *.log
-.settings
-.loadpath
-.recommenders
-local.properties
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -19,12 +17,6 @@ local.properties
 *.zip
 *.tar.gz
 *.rar
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# STS (Spring Tool Suite)
-.springBeans
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
