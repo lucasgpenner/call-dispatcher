@@ -6,7 +6,7 @@ Existe un call center donde hay 3 tipos de empleados: operador, supervisor y dir
 telefónica en primera instancia debe ser atendida por un operador, si no hay ninguno libre debe ser atendida por un supervisor, y de no 
 haber tampoco supervisores libres debe ser atendida por un director.
 
-#### Requerimientos
+## Requerimientos
 
 - Diseñar el modelado de clases y diagramas UML necesarios para documentar y comunicar el diseño.
 
@@ -19,7 +19,7 @@ haber tampoco supervisores libres debe ser atendida por un director.
 - Debe tener un test unitario donde lleguen 10 llamadas.
 
 
-#### Extras/Plus
+## Extras/Plus
 
 
 - Dar alguna solución sobre qué pasa con una llamada cuando no hay ningún empleado libre.
@@ -31,7 +31,7 @@ haber tampoco supervisores libres debe ser atendida por un director.
 - Agregar documentación de código.
 
 
-#### Solución
+## Solución
 
 - Se decidió incorporar el patrón “Producer-Consumer” en donde el producer, vaya guardando las llamadas dentro de una cola ConcurrentLinkedDeque ilimitada. Esta permite obtener la primer llamada en la cola, como así también, si no hay empleados disponibles para atender esta llamada, permite volver a almacenarla en la primera posición.
 - Las colas utilizadas por el consumer, están implementadas con LinkedBlockingQueue para poder aprovechar de estas sus capacidades y asi, pasar de un empleado a otro si su cola esta llena.
